@@ -1,0 +1,43 @@
+@media screen {
+  .how-to-use {
+    text-align: center;
+
+    .container {
+
+      .easy-to-use {
+        @include font-props(36px, 400, $txt-black);
+        margin: 70px 0;
+      }
+
+      .how-to-use-img {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+      }
+
+      .order {
+        margin: 50px 0;
+        text-align: left;
+        padding-left: 50px;
+
+        &__txt {
+          @include font-props(20px, 500, $txt-black);
+          line-height: 30px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      .how-to-use-txt {
+        @include font-props(20px, 300, $txt-black);
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

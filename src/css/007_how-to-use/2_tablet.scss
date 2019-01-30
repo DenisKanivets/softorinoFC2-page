@@ -1,0 +1,39 @@
+@media screen and (min-width: 640px){
+  .how-to-use {
+
+    .container {
+
+      .easy-to-use {
+        @include font-props(40px, 400, $txt-black);
+        margin: 100px 0;
+      }
+
+      .how-to-use-img {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .order {
+        margin: 50px 0;
+        padding-left: 70px;
+
+        &__txt {
+          @include font-props(24px, 500, $txt-black);
+          line-height: 34px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      .how-to-use-txt {
+        @include font-props(20px, 300, $txt-black);
+        line-height: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

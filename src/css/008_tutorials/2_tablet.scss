@@ -1,0 +1,43 @@
+@media screen and (min-width: 640px){
+  .tutorials-block {
+
+    .container {
+
+      .how-to-change {
+        @include font-props(36px, 500, #fff);
+        line-height: 44px;
+        padding: 100px 50px;
+
+      }
+
+      .tutorial {
+
+        &__img {
+          width: 100%;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding-bottom: 20px;
+        }
+
+        &__txt {
+          padding-top: 0;
+          padding-left: 100px;
+          padding-right: 100px;
+
+          &--headline {
+            @include font-props(26px, 400, #fff);
+            line-height: 30px;
+
+          }
+
+          &--description {
+            @include font-props(18px, 300, $txt-gray);
+            padding-top: 20px;
+            padding-bottom: 70px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}

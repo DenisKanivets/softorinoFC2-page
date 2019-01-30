@@ -1,0 +1,70 @@
+@media screen {
+  .download {
+    text-align: center;
+
+    .container {
+
+      .beta-testing {
+        @include font-props(36px, 400, $txt-black);
+        padding: 70px 0;
+      }
+
+      .sing-up-info {
+        @include font-props(20px, 300, $txt-black);
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+      }
+
+      .FC-editor-img {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-bottom: 70px;
+      }
+
+      .btn-download {
+        display: inline-block;
+        width: 280px;
+        height: 60px;
+        background-color: $btn-green;
+        border: none;
+        border-radius: 10px;
+        @include font-props(20px, 700, #fff);
+        line-height: 60px;
+      }
+
+      .btn-download:hover {
+        background-color: green;
+      }
+
+      .txt-under-btn {
+        margin-top: 10px;
+        @include font-props(12px, 300, $txt-gray);
+      }
+
+      .position {
+        margin: 70px 0;
+
+
+        .tell-the-world {
+          @include font-props(16px, 600, $txt-black);
+        }
+
+        .social {
+
+          &__link {
+
+            img {
+              width: 33px;
+              height: 33px;
+              margin: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

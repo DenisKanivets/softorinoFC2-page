@@ -1,0 +1,76 @@
+@media screen {
+  .video {
+    background-image: url("../../img/Natali.png");
+    background-repeat: no-repeat;
+    background-color: $bg-yellow;
+    background-size: auto 100%;
+    background-position-x: 57%;
+    height: 500px;
+    position: relative;
+
+    .container {
+
+      .how-i-boost {
+        @include font-props(42px, 700, #fff);
+        padding: 100px 20px 50px 20px;
+        line-height: 60px;
+      }
+
+      .watch-btn {
+        margin-left: 20px;
+        width: 280px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        @include font-props(20px, 700, #fff);
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+
+        .fa-play {
+          color: $bg-yellow;
+        }
+      }
+
+
+
+      #player {
+        top: -320px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%);
+          width: 80%;
+          height: 80%;
+          border: 0;
+        }
+      }
+
+      .hide-player {
+        display: none;
+      }
+
+      .open-player {
+        display: block;
+
+      }
+
+      #exit {
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 0;
+        right: 4%;
+        cursor: pointer;
+      }
+    }
+  }
+}

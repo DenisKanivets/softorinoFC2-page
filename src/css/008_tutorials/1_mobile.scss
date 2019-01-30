@@ -1,0 +1,47 @@
+@media screen {
+  .tutorials-block {
+    background-color: $bg-light-gray;
+    text-align: center;
+
+    .container {
+
+      .how-to-change {
+        @include font-props(36px, 500, #fff);
+        line-height: 44px;
+        padding: 50px 15px;
+
+      }
+
+      .tutorial {
+
+        &__img {
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 20px;
+          box-sizing: border-box;
+        }
+
+        &__txt {
+          text-align: left;
+          padding-top: 30px;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &--headline {
+            @include font-props(22px, 400, #fff);
+            line-height: 26px;
+
+          }
+
+          &--description {
+            @include font-props(14px, 300, $txt-gray);
+            padding-top: 20px;
+            padding-bottom: 40px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

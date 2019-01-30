@@ -1,0 +1,14 @@
+$bg-light-gray: #2e3138;
+$bg-gray: #222529;
+$bg-yellow: #f6c500;
+$btn-green: #05bf4b;
+$txt-gray: #a2abb7;
+$txt-blue: #3896ff;
+$txt-black: #1d1e21;
+
+@mixin font-props($size, $weight, $color) {
+  font-family: HelveticaNeue, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

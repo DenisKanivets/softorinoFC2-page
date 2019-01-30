@@ -1,0 +1,57 @@
+@media screen and (min-width: 640px){
+  .download {
+
+    .container {
+
+      .beta-testing {
+        @include font-props(40px, 400, $txt-black);
+        padding: 100px 0;
+      }
+
+      .sing-up-info {
+        @include font-props(24px, 300, $txt-black);
+        line-height: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 70px;
+      }
+
+      .FC-editor-img {
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 100px;
+      }
+
+      .btn-download {
+        width: 300px;
+        height: 70px;
+        @include font-props(24px, 700, #fff);
+        line-height: 70px;
+
+      }
+
+      .txt-under-btn {
+        @include font-props(14px, 300, $txt-gray)
+      }
+
+      .position {
+        margin: 70px 0;
+
+
+        .tell-the-world {
+          @include font-props(22px, 600, $txt-black);
+        }
+
+        .social {
+
+          &__link {
+
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

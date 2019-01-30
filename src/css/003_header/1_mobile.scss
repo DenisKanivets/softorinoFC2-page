@@ -1,0 +1,210 @@
+@media screen {
+  .header-block {
+    background-color: $bg-light-gray;
+
+    .container {
+
+      .nav-head {
+        display: flex;
+        justify-content: space-between;
+
+        .main-logo {
+          width: 65px;
+          height: 50px;
+          margin: 15px;
+        }
+
+        nav {
+
+          .nav-btn {
+            margin: 20px;
+
+            .fa-bars {
+              font-size: 40px;
+              color: $txt-gray;
+            }
+
+            .fa-times {
+              font-size: 40px;
+              color: $txt-gray;
+            }
+          }
+
+          .drop-down {
+            position: absolute;
+            right: 0;
+            top: 80px;
+
+
+            &__item {
+              width: 100vw;
+              height: 75px;
+              background: $txt-gray;
+              border-bottom: 1px solid $bg-light-gray;
+
+
+              &--text {
+                @include font-props(16px, 500, rgba(255, 255, 255, 0.8));
+                line-height: 75px;
+                padding-left: 20px;
+              }
+
+              .red-circle {
+                background-color: red;
+                border-radius: 10px;
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                position: relative;
+                bottom: 7px;
+                left: 3px;
+              }
+
+              .usa {
+                height: 16px;
+                width: 16px;
+                background-image: url("../../img/usa.png");
+                background-size: contain;
+                display: inline-block;
+                position: relative;
+                bottom: 3px;
+                left: 3px;
+              }
+            }
+          }
+
+          .hide {
+            display: none;
+          }
+
+          .show {
+            display: inline-block;
+          }
+        }
+      }
+
+      .header-position {
+
+        .main-info {
+
+          .headline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 10px;
+
+            &__img {
+              width: 85px;
+              height: 100px;
+            }
+
+            &__text {
+
+              &--main {
+                @include font-props(24px, 700, #fff);
+                margin-bottom: 10px;
+              }
+
+              &--description {
+                @include font-props(16px, 300, #fff)
+              }
+            }
+          }
+
+          .awards {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+
+
+            .item {
+              display: flex;
+              margin: 5px;
+
+              &__left-img {
+                width: 15px;
+                height: 30px;
+              }
+
+              &__text {
+                text-align: center;
+                line-height: 15px;
+
+                &--top {
+                  @include font-props(12px, 700, $txt-gray)
+                }
+
+                &--bottom {
+                  @include font-props(12px, 300, $txt-gray)
+                }
+              }
+
+              &__right-img {
+                width: 15px;
+                height: 30px;
+                transform: scale(-1, 1);
+              }
+            }
+          }
+
+          .download-block {
+            text-align: center;
+
+            .beta {
+
+              &__top {
+                @include font-props(14px, 700, #fff)
+              }
+
+              &__bottom {
+                margin-top: 10px;
+                @include font-props(12px, 300, $txt-gray)
+              }
+            }
+
+            .free {
+              margin: 30px 0;
+
+
+              &__download {
+                display: inline-block;
+                width: 280px;
+                height: 60px;
+                background-color: $btn-green;
+                border: none;
+                border-radius: 10px;
+                @include font-props(20px, 700, #fff);
+                line-height: 60px;
+              }
+
+              &__download:hover {
+                background-color: green;
+              }
+
+              &__txt-under-btn {
+                margin-top: 10px;
+                @include font-props(12px, 300, $txt-gray)
+              }
+            }
+          }
+        }
+
+        .main-img {
+          text-align: center;
+          padding: 50px 0;
+
+          img {
+            width: 80%;
+          }
+
+          .watch-film {
+            display: block;
+            margin-top: 15px;
+            @include font-props(14px, 100, $txt-blue);
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@media screen {
+  .features-block {
+    background-color: $bg-gray;
+    text-align: center;
+
+    .container {
+
+      .light-gray {
+        background-color: $bg-light-gray;
+      }
+
+      .feature {
+
+        .info {
+          padding-top: 50px;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &__headline {
+            @include font-props(30px, 600, #fff);
+            line-height: 40px;
+
+          }
+
+          &__description {
+            @include font-props(16px, 300, $txt-gray);
+            margin-top: 50px;
+            margin-bottom: 50px;
+            line-height: 24px;
+          }
+
+          &__link {
+
+            &--img {
+              width: 18px;
+              height: 23px;
+            }
+
+            &--txt {
+              @include font-props(16px, 400, $txt-blue);
+            }
+          }
+        }
+
+        .feature-img {
+          width: 100%;
+          padding: 50px 15px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@media screen and (min-width: 993px){
+  .main-info {
+
+    .container {
+
+
+      .origin-FC {
+        @include font-props(50px, 300, #1d1e21);
+      }
+
+      .intro {
+        @include font-props(20px, 100, #1d1e21);
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 100px;
+      }
+
+      .graph {
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 80%;
+      }
+
+      .comment {
+        margin-top: 100px;
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        &__txt {
+          @include font-props(20px, 300, #000);
+        }
+
+        &__comp {
+          display: inline;
+        }
+
+
+        &__user {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          margin: 50px;
+
+
+          &--img {
+
+          }
+
+          &--info {
+            @include font-props(18px, 400, #000);
+            text-align: left;
+            padding-left: 40px;
+
+
+            strong {
+
+            }
+          }
+        }
+      }
+
+      .praised-by {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+        &__txt {
+          padding: 50px 0;
+          @include font-props(18px, 700, #000);
+        }
+
+        &__img {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

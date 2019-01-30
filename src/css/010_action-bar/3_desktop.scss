@@ -1,0 +1,79 @@
+@media screen {
+  .hide-bar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .show-bar {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    animation: showBar 1s ease forwards;
+
+    .container {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .main-folder {
+        display: flex;
+        align-items: center;
+
+        &__img {
+          width: 59px;
+          height: 65px;
+        }
+
+        &__txt {
+          @include font-props(24px, 600, $txt-black);
+          padding-left: 15px;
+        }
+      }
+
+      .next2 {
+        width: 21px;
+        height: 40px;
+      }
+
+      .folders {
+
+
+        &__img {
+          width: 59px;
+          height: 65px;
+          margin-left: 10px;
+        }
+      }
+
+      .btn-join-beta {
+        text-align: center;
+        display: inline-block;
+        width: 250px;
+        height: 60px;
+        background-color: $btn-green;
+        border: none;
+        border-radius: 10px;
+        @include font-props(20px, 700, #fff);
+        line-height: 60px;
+      }
+
+      .btn-join-beta:hover {
+        background-color: green;
+      }
+    }
+  }
+
+  @keyframes showBar {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}

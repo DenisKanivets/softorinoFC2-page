@@ -1,0 +1,157 @@
+@media screen and (min-width: 640px){
+  .header-block {
+
+
+    .container {
+
+      .nav-head {
+
+
+        .main-logo {
+
+        }
+
+        nav {
+
+
+          .nav-btn {
+
+
+            .fa-bars {
+
+            }
+
+            .fa-times {
+
+            }
+          }
+
+          .drop-down {
+
+            &__item {
+
+
+              &--text {
+                @include font-props(18px, 500, rgba(255, 255, 255, 0.8));
+              }
+
+
+              .red-circle {
+
+              }
+
+              .usa {
+
+              }
+            }
+          }
+        }
+      }
+
+      .header-position {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 50px 0;
+
+        .main-info {
+
+          .headline {
+
+
+            &__img {
+              width: 100px;
+              height: 130px;
+            }
+
+            &__text {
+
+              &--main {
+                @include font-props(30px, 700, #fff);
+              }
+
+              &--description {
+                @include font-props(20px, 300, #fff)
+              }
+            }
+          }
+
+          .awards {
+            margin: 40px 0;
+
+
+            .item {
+
+              &__left-img {
+                width: 15px;
+                height: 30px;
+              }
+
+              &__text {
+                line-height: 15px;
+
+                &--top {
+                  @include font-props(14px, 700, $txt-gray)
+                }
+
+                &--bottom {
+                  @include font-props(14px, 300, $txt-gray)
+                }
+              }
+
+              &__right-img {
+                width: 15px;
+                height: 30px;
+              }
+            }
+          }
+
+          .download-block {
+
+            .beta {
+
+              &__top {
+                @include font-props(16px, 700, #fff)
+              }
+
+              &__bottom {
+                margin-top: 10px;
+                @include font-props(14px, 300, $txt-gray)
+              }
+            }
+
+            .free {
+              margin: 30px 0;
+
+
+              &__download {
+                width: 300px;
+                height: 70px;
+                @include font-props(24px, 700, #fff);
+                line-height: 70px;
+              }
+
+              &__txt-under-btn {
+                @include font-props(14px, 300, $txt-gray)
+              }
+            }
+          }
+        }
+
+        .main-img {
+          padding: 0;
+
+          img {
+            width: 40vw;
+          }
+
+          .watch-film {
+            @include font-props(16px, 100, $txt-blue)
+          }
+
+        }
+      }
+    }
+  }
+}
